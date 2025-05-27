@@ -231,13 +231,13 @@ li a:hover {
     }
 
      .div-apresentacao div p {
-        font-size: 15px;
+        font-size: 16px;
         margin-bottom: 20px;
     }
 
     .div-apresentacao div a {
         padding: 6px 12px;
-        font-size: 15px;
+        font-size: 16px;
     }
  }
 
@@ -287,14 +287,12 @@ li a:hover {
     }
 
      .div-apresentacao div p {
-        font-size: 14px;
         margin-bottom: 10px;
         max-width: 100%;
     }
 
     .div-apresentacao div a {
         padding: 5px 10px;
-        font-size: 14px;
     }
 
  }
@@ -404,7 +402,7 @@ span {
     }
 
     .div-conteudo-sessao2 p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .div-conteudo-sessao2 {
@@ -412,27 +410,65 @@ span {
     }
 
     .div-conteudo-sessao2 h3 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .div-introducao h2 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
 }
 
-/* @media only screen and (max-width: 400px) {
-    .div-conteudo-sessao2 p {
-        font-size: 12px;
+/*--- FOOTER --- */
+.div-pai-footer {
+    background-color: #f4f4f4;
+    border-top: solid 3px #FF9000;
+    padding: 30px;
+    margin-top: 10vh;
+}
+
+.div-pai-footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-pai-footer img {
+    width: 200px;
+    margin: 20px 0px;
+}
+
+.div-pai-footer h6 {
+    font-size: 17px;
+}
+
+.div-pai-footer p {
+    text-align: center;
+}
+
+/* --- RESPONSIVIDADE --- */
+
+@media only screen and (max-width: 800px) {
+    .div-pai-footer {
+        padding: 15px;
     }
 
-    .div-conteudo-sessao2 h3 {
-        font-size: 15px;
+    .div-pai-footer h6 {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .div-pai-footer {
+        padding: 10px;
+    }
+    
+    .div-pai-footer p {
+        font-size: 14px;
     }
 
-    .div-introducao h2 {
-        font-size: 20px;
-        margin: 0px 30px;
+    .div-pai-footer img {
+        width: 130px;
+        margin: 10px 0px;
     }
-
-} */
+}
