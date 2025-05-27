@@ -142,10 +142,29 @@ li a:hover {
    }
 }
 
+@media only screen and (max-width: 560px) {
+    nav {
+        max-height: 7vh;
+    }
+
+    nav img {
+        width: 120px;
+        margin-left: 10px;
+    }
+
+    .menubtn {
+        padding-right: 10px;
+        font-size: 35px;
+    }
+
+    li a {
+    font-size: 15px;
+   }
+}
+
  /* -- APRESENTAÇÃO -- */
 
 .sessao1 {
-    height: 100vh;
     padding-top: 16vh;
 }
 
@@ -311,6 +330,7 @@ li a:hover {
 
  .section2 {
     margin: 0px 80px;
+    margin-top: 15vh;
     border: solid 3px #FF9000;
     border-radius: 20px;
     padding: 20px;
@@ -329,7 +349,7 @@ span {
 
 .div-conteudo-sessao2 img {
     height: 300px;
-    margin: 0px 30px;
+    margin: 0px 20px;
 }
 
 .div-conteudo-sessao2 {
@@ -347,4 +367,66 @@ span {
     font-size: 30px;
     margin-bottom: 10px;
     border-bottom: 2px solid #FF9000;
+}
+
+
+/* --- RESPONSIVIDADE ---  */
+
+@media only screen and (max-width: 1060px) {
+    .div-conteudo-sessao2 img {
+        height: auto;
+        margin: 20px;
+    }
+
+    .div-conteudo-sessao2 {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 30px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .section2 {
+        margin: 0px 30px;
+        margin-top: 10vh;
+    }
+
+    .div-conteudo-sessao2 img {
+        margin: 10px;
+    }
+
+    .div-conteudo-sessao2 div {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .div-introducao h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .section2 {
+        border: none;
+        border-radius: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .div-conteudo-sessao2 p {
+        font-size: 12px;
+    }
+
+    .div-conteudo-sessao2 h3 {
+        font-size: 15px;
+    }
+
+    .div-introducao h2 {
+        font-size: 20px;
+        margin: 0px 30px;
+    }
+
 }
