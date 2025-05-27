@@ -111,6 +111,7 @@ li a:hover {
     display: flex;
     flex-direction: column;
     background-color: #f4f4f4;
+    border-bottom: solid 2px #FF9000;
     text-align: center;
     padding: 10px 0px;
    }
@@ -139,26 +140,27 @@ li a:hover {
 
    li a {
     font-size: 20px;
+    border-bottom: solid 2px #FF9000;
    }
 }
 
 @media only screen and (max-width: 560px) {
     nav {
-        max-height: 7vh;
+        max-height: 7.5vh;
     }
 
     nav img {
-        width: 120px;
+        width: 130px;
         margin-left: 10px;
     }
 
     .menubtn {
         padding-right: 10px;
-        font-size: 35px;
+        font-size: 38px;
     }
 
     li a {
-    font-size: 15px;
+    font-size: 16px;
    }
 }
 
@@ -189,9 +191,10 @@ li a:hover {
 }
     
 .div-apresentacao div p {
-    font-size: 17px;
+    font-size: 19px;
     margin-bottom: 30px;
-     max-width: 90%;
+    max-width: 90%;
+    text-align: justify;
  }
 
  .div-apresentacao img {
@@ -224,17 +227,17 @@ li a:hover {
  @media only screen and (max-width: 1040px) {
 
      .div-apresentacao div h1 {
-     font-size: 40px;
+        font-size: 40px;
     }
 
      .div-apresentacao div p {
-     font-size: 15px;
-     margin-bottom: 20px;
+        font-size: 15px;
+        margin-bottom: 20px;
     }
 
     .div-apresentacao div a {
-    padding: 6px 12px;
-    font-size: 15px;
+        padding: 6px 12px;
+        font-size: 15px;
     }
  }
 
@@ -249,21 +252,18 @@ li a:hover {
     }
     
     .div-apresentacao div p {
-        font-size: 12px;
         margin-bottom: 10px;
-        text-align: justify;
     }
 
     .div-apresentacao div a {
-    padding: 6px 12px;
-    font-size: 12px;
+        padding: 6px 12px;
     }
  }
 
  @media only screen and (max-width: 580px) {
 
     .div-apresentacao {
-        margin: 0px 30px;
+        margin: 0px 10px;
         display: flex;
         flex-direction: column;
         max-width: none;
@@ -287,14 +287,14 @@ li a:hover {
     }
 
      .div-apresentacao div p {
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 10px;
         max-width: 100%;
     }
 
     .div-apresentacao div a {
         padding: 5px 10px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
  }
@@ -302,7 +302,6 @@ li a:hover {
  @media only screen and (max-width: 360px) {
 
     .div-apresentacao {
-        margin: 0px 30px;
         display: flex;
         flex-direction: column;
     }
@@ -313,16 +312,6 @@ li a:hover {
 
      .div-apresentacao div h1 {
         font-size: 20px;
-    }
-
-     .div-apresentacao div p {
-        font-size: 11px;
-        margin-bottom: 10px;
-    }
-
-    .div-apresentacao div a {
-        padding: 5px 10px;
-        font-size: 11px;
     }
  }
 
@@ -341,6 +330,7 @@ li a:hover {
     font-size: 40px;
     color: #1C1C1C;
     padding-top: 50px;
+    margin: 10px;
 }
 
 span {
@@ -381,7 +371,6 @@ span {
     .div-conteudo-sessao2 {
         display: flex;
         flex-direction: column;
-        margin: 40px 30px;
     }
 }
 
@@ -406,16 +395,33 @@ span {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 580px) {
     .section2 {
+        margin: 0px 15px;
         border: none;
         border-radius: 0px;
         padding: 0px;
+    }
+
+    .div-conteudo-sessao2 p {
+        font-size: 14px;
+    }
+
+    .div-conteudo-sessao2 {
         margin: 0px;
     }
+
+    .div-conteudo-sessao2 h3 {
+        font-size: 16px;
+    }
+
+    .div-introducao h2 {
+        font-size: 20px;
+    }
+
 }
 
-@media only screen and (max-width: 400px) {
+/* @media only screen and (max-width: 400px) {
     .div-conteudo-sessao2 p {
         font-size: 12px;
     }
@@ -429,4 +435,4 @@ span {
         margin: 0px 30px;
     }
 
-}
+} */
