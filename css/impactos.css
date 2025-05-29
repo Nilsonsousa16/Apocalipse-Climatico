@@ -233,13 +233,13 @@ main main {
 
 
 
-/* --- SESSAO1 E SESSAO2 --- */
+/* --- SESSAO1, SESSAO2 SESSAO3 E SESSAO4 --- */
 #sessao1 {
     padding-top: 15vh;
     width: 80%;
 }
 
-#sessao2 {
+#sessao2, #sessao3, #sessao4 {
     width: 80%;
     padding-top: 9vh;
 }
@@ -283,9 +283,20 @@ span {
     margin-bottom: 20px;
 }
 
+#sessao3 img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#sessao4 img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
 /* --- RESPONSIVIDADE --- */
 @media only screen and (max-width: 1060px) {
-    #sessao1, #sessao2 {
+    #sessao1, #sessao2, #sessao3, #sessao4 {
         width: 100%;
     }
 }
