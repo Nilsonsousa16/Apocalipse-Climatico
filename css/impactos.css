@@ -233,10 +233,15 @@ main main {
 
 
 
-/* --- SESSAO1 --- */
+/* --- SESSAO1 E SESSAO2 --- */
 #sessao1 {
     padding-top: 15vh;
     width: 80%;
+}
+
+#sessao2 {
+    width: 80%;
+    padding-top: 9vh;
 }
 
 h1 {
@@ -247,30 +252,40 @@ span {
     color: #FF9000;
 }
 
-.div-pai-sessao1 {
+.div-pai-sessao {
     margin-top: 30px;
 }
 
-.div-pai-sessao1 ul {
+.div-pai-sessao ul {
     margin-bottom: 30px;
     text-align: justify;
 }
 
-.div-pai-sessao1 p {
+.div-pai-sessao p {
     text-align: justify;
 }
 
-.div-pai-sessao1 h3 {
+.div-pai-sessao h3 {
     font-size: 20px;
 }
 
-.div-pai-sessao1 h2 {
+.div-pai-sessao h2 {
     border-bottom: solid 3px #FF9000
+}
+
+#sessao2 img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#sessao1 img {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 /* --- RESPONSIVIDADE --- */
 @media only screen and (max-width: 1060px) {
-    #sessao1 {
+    #sessao1, #sessao2 {
         width: 100%;
     }
 }
