@@ -279,12 +279,6 @@ ol li::marker {
     margin-top: 10vh;
 }
 
-.div-pai-footer div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .div-pai-footer img {
     width: 200px;
     margin: 20px 0px;
@@ -292,6 +286,7 @@ ol li::marker {
 
 .div-pai-footer h6 {
     font-size: 17px;
+    text-align: center;
 }
 
 .div-pai-footer p {
