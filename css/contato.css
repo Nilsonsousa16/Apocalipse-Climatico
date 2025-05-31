@@ -1,0 +1,353 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* -- NAVEGAÇÃO */
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+nav {
+    max-height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 3px #FF9000;
+    background-color: #f4f4f4;
+}
+
+header ul {
+    display: flex;
+    margin-top: 18px;
+    gap: 40px;
+    align-items: center;
+}
+
+nav img {
+    width: 180px;
+    margin-left: 20px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: #FF9000;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav button, .mobile-menu button {
+    background: transparent;
+    border: none;
+}
+
+nav i, .mobile-menu i {
+    color: #FF9000;
+    margin-right: 20px;
+}
+
+nav button:hover, .mobile-menu button:hover {
+    transition: 0.3s all;
+    transform: scale(1.1);
+    font-size: 20x;
+}
+
+li a:hover {
+    transition: 0.3s all;
+    transform: scale(1.1);
+    font-size: 20x;
+}
+
+.border-c {
+    border: solid 2px #FF9000;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.border-c:hover {
+    border: solid 2px #FF9000;
+    background-color: #FF9000;
+    color: #ffffff;
+    transition: 0.3s all;
+    transform: scale(1.1);
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 1px 10px 40px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.menubtn {
+    display: none;
+}
+
+/* -- RESPONSIVIDADE -- */
+
+@media only screen and (max-width: 1060px) {
+    #menu {
+     display: none;
+    }
+
+   .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    border-bottom: solid 2px #FF9000;
+    text-align: center;
+    padding: 10px 0px;
+   }
+
+   header ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    gap: 15px;
+   }
+
+   .menubtn {
+    display: block;
+    padding-right: 20px;
+    color: #FF9000;
+    font-size: 40px;
+   }
+
+   .mobile-menu i {
+    margin-right: 0px;
+    }
+
+   .open {
+    display: block;
+   }
+
+   header li a {
+    font-size: 20px;
+    border-bottom: solid 2px #FF9000;
+   }
+}
+
+@media only screen and (max-width: 560px) {
+    nav {
+        max-height: 7.5vh;
+    }
+
+    nav img {
+        width: 130px;
+        margin-left: 10px;
+    }
+
+    .menubtn {
+        padding-right: 10px;
+        font-size: 38px;
+    }
+
+    header li a {
+        font-size: 16px;
+   }
+}
+
+/* --- CONTATO ---*/
+#contato {
+    padding: 8vh 0vh;
+    margin: 0px 80px;
+}
+
+#contato h2 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 4vh;
+}
+
+.div-pai-contato {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+form { 
+    width: 80%;
+}
+
+.div-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.div-form label {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.div-form input{
+    background: transparent;
+    border: none;
+    border: 5px solid #FF9000;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    outline-color: #FF9000;
+}
+
+.div-form textarea {
+    background: transparent;
+    border: none;
+    border: 5px solid #FF9000;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    resize: none;
+    max-height: 200px;
+    outline-color: #FF9000;
+}
+
+.div-form button {
+    padding: 10px;
+    color: #ffffff;
+    background-color: #FF9000;
+    border: solid 2px #FF9000;
+    border-radius: 8px;
+    margin: 15px 0px;
+    width: 100%;
+    font-weight: 700;
+}
+
+.div-form button:hover {
+    background-color: #ffffff;
+    color: #FF9000;
+    transition: 0.3s all;
+}
+
+.div-info-contato {
+    width: 20%;
+}
+
+.div-info-contato div {
+    border: solid 2px #FF9000;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: justify;
+    font-size: 15px;
+    align-self: center;
+}
+
+/* --- RESPONSIVIDADE ---  */
+@media only screen and (max-width: 1000px) {
+    #contato {
+        padding: 8vh 0vh;
+        margin: 0px 30px;
+    }   
+    
+    form { 
+        width: 100%;
+    }
+    
+    .div-form input{
+        background: transparent;
+        border: none;
+        border: 5px solid #FF9000;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+        outline-color: #FF9000;
+    }
+    
+    .div-form textarea {
+        background: transparent;
+        border: none;
+        border: 5px solid #FF9000;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+        padding: 10px;
+        resize: none;
+        max-height: 200px;
+        outline-color: #FF9000;
+    }
+    
+    .div-info-contato {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #contato h2 {
+        font-size: 40px;
+    }
+
+    .div-form button {
+        font-size: 15px;
+    }
+}
+
+
+/*--- FOOTER --- */
+.div-pai-footer {
+    background-color: #f4f4f4;
+    border-top: solid 3px #FF9000;
+    padding: 30px;
+    margin-top: 10vh;
+}
+
+.div-pai-footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-pai-footer img {
+    width: 200px;
+    margin: 20px 0px;
+}
+
+.div-pai-footer h6 {
+    font-size: 17px;
+}
+
+.div-pai-footer p {
+    text-align: center;
+}
+
+/* --- RESPONSIVIDADE --- */
+
+@media only screen and (max-width: 800px) {
+    .div-pai-footer {
+        padding: 15px;
+    }
+
+    .div-pai-footer h6 {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .div-pai-footer {
+        padding: 10px;
+    }
+    
+    .div-pai-footer p {
+        font-size: 14px;
+    }
+
+    .div-pai-footer img {
+        width: 130px;
+        margin: 10px 0px;
+    }}
