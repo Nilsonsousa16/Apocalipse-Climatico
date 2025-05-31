@@ -175,8 +175,27 @@ li a:hover {
 }
 
 #sessao1 img {
-    margin: 20px 0px;
+    margin: 5px 5px;
     width: 100%;
+}
+
+#sessao1 .img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.img1-divimg {
+    max-width: 30%;
+}
+
+.img2-divimg {
+    max-width: 30%;
+}
+
+.img3-divimg {
+    max-width: 30%;
 }
 
 h1 {
@@ -188,11 +207,16 @@ span {
     color: #FF9000;
 }
 
+ol li::marker {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .div-pai-sessao {
     margin-top: 30px;
 }
 
-.div-pai-sessao ul {
+.div-pai-sessao ol {
     margin-bottom: 30px;
     text-align: justify;
 }
@@ -203,10 +227,6 @@ span {
 
 .div-pai-sessao h3 {
     font-size: 20px;
-}
-
-.div-pai-sessao h2 {
-    border-bottom: solid 3px #FF9000;
 }
 
 
@@ -222,16 +242,32 @@ span {
         font-size: 24px;
     }
 
-    .div-pai-sessao1 h2 {
-        font-size: 19px;
-    }
-
     .div-pai-sessao1 h3 {
         font-size: 17px;
     }
 
+    ol li::marker {
+        font-size: 18px;
+    }
+
     .div-pai-sessao1 p, li {
-        font-size: 15px;
+        font-size: 14px;
+    }
+
+    #sessao1 .img {
+        flex-direction: column;
+    }
+
+    .img1-divimg {
+        max-width: 100%;
+    }
+
+    .img2-divimg {
+        max-width: 100%;
+    }
+
+    .img3-divimg {
+        max-width: 100%;
     }
 }
 
