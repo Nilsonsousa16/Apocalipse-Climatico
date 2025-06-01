@@ -237,6 +237,24 @@ ol li::marker {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    #sessao1 .img {
+        flex-direction: column;
+    }
+
+    .img1-divimg {
+        max-width: 100%;
+    }
+    
+    .img2-divimg {
+        max-width: 100%;
+    }
+    
+    .img3-divimg {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     h1 {
         font-size: 24px;
@@ -254,21 +272,6 @@ ol li::marker {
         font-size: 14px;
     }
 
-    #sessao1 .img {
-        flex-direction: column;
-    }
-
-    .img1-divimg {
-        max-width: 100%;
-    }
-
-    .img2-divimg {
-        max-width: 100%;
-    }
-
-    .img3-divimg {
-        max-width: 100%;
-    }
 }
 
 /*--- FOOTER --- */
